@@ -1,0 +1,5 @@
+- name: Install awx
+  hosts: localhost
+  connection: local
+  roles:
+    - base_package
