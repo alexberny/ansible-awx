@@ -1,0 +1,11 @@
+- name: Get Minikube
+  get_url:
+    url: https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    dest: ~/.
+    mode: a+x
+
+- name: Install Minikube
+  become: yes
+  dnf:
+    name: ~/minikube-latest.x86_64.rpm
+  state: present
