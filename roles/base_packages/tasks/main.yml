@@ -8,3 +8,10 @@
   become: yes
   dnf:
     autoremove: yes
+
+- name: Packages
+  become: yes
+  dnf:
+  name:
+    - "@Virtualization Host"
+    state: latest
