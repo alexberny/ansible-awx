@@ -5,5 +5,12 @@
     state: latest
 
 - name: Autoremove unneeded packages installed as dependencies
+  become: yes
   dnf:
     autoremove: yes
+
+- name: Install base packages
+  become: yes
+  dnf:
+    name:
+      - git
