@@ -6,6 +6,9 @@ PATH=/usr/local/bin:$PATH
 # install ansible
 sudo dnf install ansible
 
+# install git
+sudo dnf install git
+
 # get ansible script
 if [ ! -d ansible-awx ]; then
     git clone https://github.com/alexberny/ansible-awx.git
