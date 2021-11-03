@@ -7,5 +7,5 @@
 - name: Install Minikube
   become: yes
   dnf:
-    name: {{ ansible_facts['env']['HOME'] }}/minikube-latest.x86_64.rpm
+    name: "{{ ansible_facts['env']['HOME'] }}/minikube-latest.x86_64.rpm"
     state: present
