@@ -12,6 +12,6 @@
 - name: Packages
   become: yes
   dnf:
-  name:
-    - "@Virtualization Host"
+    name:
+      - "@Virtualization Host"
     state: latest
