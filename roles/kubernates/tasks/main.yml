@@ -8,4 +8,4 @@
   become: yes
   dnf:
     name: ~/minikube-latest.x86_64.rpm
-  state: present
+    state: present
