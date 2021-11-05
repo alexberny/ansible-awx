@@ -4,6 +4,7 @@ set -e
 PATH=/usr/local/bin:$PATH
 
 # install ansible
+sudo dnf install oracle-epel-release-el8
 sudo dnf install ansible
 
 # install git
