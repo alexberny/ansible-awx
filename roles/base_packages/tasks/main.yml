@@ -14,8 +14,14 @@
   dnf:
     name:
       # - "@Virtualization Host"
-      - "@virt:ol"
       - virt-install
       - virt-viewer
       - make
     state: latest
+
+- name: Modules
+  become: yes
+  dnf:
+    name:
+      - "@virt:ol"
+    state: present
