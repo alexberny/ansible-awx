@@ -14,7 +14,7 @@
   dnf:
     name:
       # - "@Virtualization Host"
-      - "virt:ol"
+      - "@virt:ol"
       - virt-install
       - virt-viewer
       - make
