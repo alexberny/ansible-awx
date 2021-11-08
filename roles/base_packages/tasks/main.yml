@@ -15,5 +15,7 @@
     name:
       # - "@Virtualization Host"
       - "@virt"
+      - virt-install
+      - virt-viewer
       - make
     state: latest
