@@ -30,5 +30,5 @@
   become: yes
   ansible.builtin.systemd:
     name: libvirtd
-    enable: yes
+    enabled: yes
     state: started
