@@ -25,3 +25,10 @@
     name:
       - "@virt:ol"
     state: present
+
+- name: Start libvirt module
+  become: yes
+  ansible.builtin.systemd:
+    name: libvirtd
+    enable: yes
+    state: started
